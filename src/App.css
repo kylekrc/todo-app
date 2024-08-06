@@ -404,6 +404,18 @@ textarea#description, textarea#editDescription {
   transition: background-color 0.3s, border-color 0.3s, background-image 0.3s;
 }
 
+.filter-buttons .btn-primary-add {
+  background-color: #ff692d; /* Button background color */
+  border-color: #FF7F4D; /* Button border color */
+  color: #F8FFFE; /* Text color for buttons */
+  transition: background-color 0.3s, border-color 0.3s, background-image 0.3s;
+}
+
+.filter-buttons .btn-primary {
+  background-image: linear-gradient(40deg, #FF7F4D, #5E1B89);
+  color: #F8FFFE; /* Text color for buttons */
+}
+
 /* Hover Effects */
 .btn-primary:hover, .btn-primary:focus {
   background-image: linear-gradient(40deg, #FF7F4D, #5E1B89); /* Gradient effect */

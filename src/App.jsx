@@ -240,10 +240,25 @@ function App() {
         <h1 className="top-text text-white">LexMeet</h1>
         <p className='par-lex'>Manage your tasks with the To Do App</p>
         <div className="filter-buttons">
-          <button className="btn btn-secondary" onClick={() => setFilter('All')}>All</button>
-          <button className="btn btn-secondary" onClick={() => setFilter('Pending')}>Pending</button>
-          <button className="btn btn-secondary" onClick={() => setFilter('Completed')}>Completed</button>
-          <button className="btn btn-primary ms-2 add-task-btn" onClick={() => setShowAddModal(true)}>
+          <button
+            className={`btn ${filter === 'All' ? 'btn-primary' : 'btn-secondary'}`}
+            onClick={() => setFilter('All')}
+          >
+            All
+          </button>
+          <button
+            className={`btn ${filter === 'Pending' ? 'btn-primary' : 'btn-secondary'}`}
+            onClick={() => setFilter('Pending')}
+          >
+            Pending
+          </button>
+          <button
+            className={`btn ${filter === 'Completed' ? 'btn-primary' : 'btn-secondary'}`}
+            onClick={() => setFilter('Completed')}
+          >
+            Completed
+          </button>
+          <button className="btn btn-primary-add ms-2 add-task-btn" onClick={() => setShowAddModal(true)}>
             <i className="bi bi-plus-circle"></i>
           </button>
         </div>

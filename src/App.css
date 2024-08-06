@@ -71,9 +71,6 @@ body{
   }
 }
 
-.text-title, label {
-  color: black;
-}
 /* Card styling */
 .card {
   padding: 2em;
@@ -279,6 +276,8 @@ body{
   margin-bottom: 1rem; /* Space below input */
   margin-top: 1rem;
   height: calc(.5em * 14);
+  color: rgb(128, 64, 0);
+  background-color: white;
 }
 
 .vertical-resize, .vertical-resize1 {
@@ -334,6 +333,8 @@ textarea#description, textarea#editDescription {
 .modal-body input[type="date"],
 .modal-body input[type="time"] {
   box-sizing: border-box;
+  background-color: white;
+  color: rgb(128, 64, 0);
 }
 
 .blue {

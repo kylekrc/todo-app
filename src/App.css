@@ -487,6 +487,20 @@ textarea#description, textarea#editDescription {
   border-radius: 8px;
 }
 
+.btn-warning {
+  color: #ffffff;
+  background-color: #5E1B89;
+  border-color: #d4d4d4;
+  border-radius: 8px;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+  color: #ffffff;
+  background: linear-gradient(to right, #F4512C, #5E1B89);
+  border-color: #d4d4d4;
+  border-radius: 8px;
+}
+
 .btn-primary-save {
   background: #5E1B89;
   color: white;

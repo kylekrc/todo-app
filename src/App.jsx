@@ -18,6 +18,7 @@ function App() {
   const [showDetailsModal, setShowDetailsModal] = useState(false);
   const [showDeleteAllModal, setShowDeleteAllModal] = useState(false);
   const [showDoneAllModal, setShowDoneAllModal] = useState(false);
+  const [showUndoneAllModal, setShowUndoneAllModal] = useState(false);
   const [taskToDelete, setTaskToDelete] = useState(null);
   const [taskToEdit, setTaskToEdit] = useState(null);
   const [actionInProgress, setActionInProgress] = useState(false);
@@ -115,6 +116,11 @@ function App() {
   const handleDoneAll = () => {
     setTodos(todos.map((t) => ({ ...t, done: true })));
     setShowDoneAllModal(false);
+  };
+
+  const handleUndoneAll = () => {
+    setTodos(todos.map((t) => ({ ...t, done: false })));
+    setShowUndoneAllModal(false);
   };
 
   const handleDeleteAll = () => {
@@ -328,6 +334,12 @@ function App() {
             Done All
           </button>
           <button
+            className="btn btn-warning me-2"
+            onClick={() => setShowUndoneAllModal(true)}
+          >
+            Undone All
+          </button>
+          <button
             className="btn btn-danger-delAll"
             onClick={() => setShowDeleteAllModal(true)}
           >
@@ -352,6 +364,27 @@ function App() {
             <div className="modal-footer">
               <button type="button" className="btn btn-secondary-cancel" onClick={() => setShowDoneAllModal(false)}>Cancel</button>
               <button type="button" className="btn btn-success" onClick={handleDoneAll}>Done All</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Undone All Confirmation Modal: */}
+      {showUndoneAllModal && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title-confirm">Confirm Undone All</h5>
+              <button type="button" className="btn-close" onClick={() => setShowUndoneAllModal(false)}>
+                <i className="bi bi-x-lg"></i>
+              </button>
+            </div>
+            <div className="modal-body">
+              <p>Are you sure you want to mark all tasks as undone?</p>
+            </div>
+            <div className="modal-footer">
+              <button type="button" className="btn btn-secondary-cancel" onClick={() => setShowUndoneAllModal(false)}>Cancel</button>
+              <button type="button" className="btn btn-warning" onClick={handleUndoneAll}>Undone All</button>
             </div>
           </div>
         </div>

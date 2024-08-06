@@ -106,6 +106,7 @@ body{
   box-sizing: border-box; /* Includes padding and border */
   position: relative; /* Required for task-date positioning */
   cursor: pointer;
+  color: rgb(86, 86, 86);
 }
 
 /* Updated for new requirements */
@@ -276,7 +277,8 @@ body{
   margin-bottom: 1rem; /* Space below input */
   margin-top: 1rem;
   height: calc(.5em * 14);
-  color: rgb(128, 64, 0);
+  /* color: rgb(128, 64, 0); */
+  color: rgb(86, 86, 86);
   background-color: white;
 }
 
@@ -334,7 +336,8 @@ textarea#description, textarea#editDescription {
 .modal-body input[type="time"] {
   box-sizing: border-box;
   background-color: white;
-  color: rgb(128, 64, 0);
+  /* color: rgb(128, 64, 0); */
+  color: rgb(86, 86, 86);
 }
 
 .blue {
@@ -527,7 +530,8 @@ textarea#description, textarea#editDescription {
   margin-left: 45px;
   font-weight: bold;
   margin-top: 15px;
-  color: #7c2300;
+  /* color: #7c2300; */
+  color: rgb(86, 86, 86);
 }
 
 .form-label-task {
@@ -538,7 +542,8 @@ textarea#description, textarea#editDescription {
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: -15px;
-  color: #7c2300;
+  /* color: #7c2300; */
+  color: rgb(86, 86, 86);
 }
 
 .form-label-title {

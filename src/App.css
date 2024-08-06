@@ -203,6 +203,7 @@ body{
   margin-bottom: 10px; /* Adjust as needed for spacing */
   margin-left: 30px;
   margin-right: 30px;
+  color: rgb(86, 86, 86);
 }
 
 .modal-content {
@@ -295,6 +296,10 @@ textarea#description, textarea#editDescription {
 }
 
 /* Updated modal button styling */
+.modal-body {
+  color: rgb(86, 86, 86);
+}
+
 .modal-body input[type="text"] {
   width: calc(100% - 7.2rem); /* Full width with padding */
   padding: 0.6em 1em;
